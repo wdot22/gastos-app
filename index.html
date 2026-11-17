@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control de gastos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Control de gastos</h1>
+    <p>Registra lo que gastas. Tus datos se quedan guardados en este navegador.</p>
+  </header>
+
+  <main>
+    <section class="panel" aria-labelledby="form-titulo">
+      <h2 id="form-titulo">Nuevo gasto</h2>
+      <form id="form-gasto" novalidate>
+        <input type="hidden" id="gasto-id">
+        <label>Descripción
+          <input type="text" id="descripcion" maxlength="60" placeholder="Ej. Tacos con amigos">
+        </label>
+        <label>Monto (MXN)
+          <input type="number" id="monto" step="0.01" min="0" inputmode="decimal" placeholder="0.00">
+        </label>
+        <label>Categoría
+          <select id="categoria"></select>
+        </label>
+        <label>Fecha
+          <input type="date" id="fecha">
+        </label>
+        <div class="acciones">
+          <button type="submit" id="btn-guardar">Agregar gasto</button>
+          <button type="button" id="btn-cancelar" class="secundario" hidden>Cancelar edición</button>
+        </div>
+      </form>
+      <p id="mensaje" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen</h2>
+      <div id="resumen"></div>
+    </section>
+
+    <section class="panel lista-panel" aria-labelledby="lista-titulo">
+      <h2 id="lista-titulo">Mis gastos</h2>
+      <div class="filtros">
+        <input type="search" id="busqueda" placeholder="Buscar por descripción" aria-label="Buscar por descripción">
+        <select id="filtro-categoria" aria-label="Filtrar por categoría"></select>
+        <select id="orden" aria-label="Ordenar gastos">
+          <option value="fecha-desc">Más recientes primero</option>
+          <option value="fecha-asc">Más antiguos primero</option>
+          <option value="monto-desc">Monto: de mayor a menor</option>
+          <option value="monto-asc">Monto: de menor a mayor</option>
+        </select>
+      </div>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
