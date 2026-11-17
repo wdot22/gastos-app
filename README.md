@@ -14,6 +14,7 @@ Aplicación web del lado del cliente para registrar, editar y consultar gastos p
 | Roberto Carlos Sánchez Flores    | 2151262 |
 | Aaron Sebastián Torres Cabriales | 2153261 |
 - Demo: https://wdot22.github.io/gastos-app/
+- Video demostración: https://youtu.be/rYl-4lDb-gI
 
 ## Funcionalidades
 
