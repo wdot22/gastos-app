@@ -4,7 +4,15 @@ Aplicación web del lado del cliente para registrar, editar y consultar gastos p
 
 **Actividad 3 – Laboratorio de Programación Web (Unidad temática 3: JavaScript)**
 
-- Autor: _tu nombre aquí_
+## Equipo
+
+| Integrante | Matrícula |
+|---|---|---|
+| Torres Pasillas Angela Susana    | 2101844 | 
+| Edmundo Santos Ramírez | 1234568 | 2148132 |
+| Edgar Jesus Del Angel Martínez   | 2160745 |
+| Roberto Carlos Sánchez Flores    | 2151262 |
+| Aaron Sebastián Torres Cabriales | 2153261 |
 - Demo: _enlace a GitHub Pages o al video_
 
 ## Funcionalidades
